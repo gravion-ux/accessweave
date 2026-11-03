@@ -1,0 +1,6 @@
+{
+  "principals": [
+    {"name": "alice", "groups": ["Domain Users"]},
+    {"name": "svc-backup", "groups": ["Domain Users", "Administrators"]}
+  ]
+}
