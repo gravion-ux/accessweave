@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "accessweave"
-version = "0.1.0"
+version = "0.2.0"
 description = "Offline identity-relationship and directory-permission review from explicitly exported inventory data."
 requires-python = ">=3.11"
 dependencies = []
