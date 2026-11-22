@@ -1,5 +1,9 @@
 # AccessWeave
 
+![Demo](docs/demo.png)
+
+*Demo: Reviewing an exported identity inventory — dormant access and privilege paths.*
+
 > Offline identity-relationship and directory-permission review from explicitly exported inventory data.
 
 **Status:** MVP scaffold / research prototype. Not production-certified.
