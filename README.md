@@ -1,5 +1,7 @@
 # AccessWeave
 
+[![CI](https://github.com/gravion-ux/accessweave/actions/workflows/ci.yml/badge.svg)](https://github.com/gravion-ux/accessweave/actions/workflows/ci.yml)
+
 ![Demo](docs/demo.png)
 
 *Demo: Reviewing an exported identity inventory — dormant access and privilege paths.*
