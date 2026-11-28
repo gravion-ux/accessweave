@@ -16,6 +16,8 @@ EXIT_OK = 0
 EXIT_INVALID_INPUT = 1
 EXIT_USAGE = 2
 
+MAX_INVENTORY_BYTES = 10 * 1024 * 1024  # 10 MiB
+
 
 class InventoryFileError(Exception):
     """The inventory file is missing or cannot be read."""
@@ -32,6 +34,10 @@ def _load_inventory(path: Path) -> dict:
     UTF-8 byte-order mark that plain ``utf-8`` decoding rejects.
     """
     try:
+        if path.stat().st_size > MAX_INVENTORY_BYTES:
+            raise InventoryFormatError(
+                f"inventory file {path} exceeds the 10 MiB size limit"
+            )
         raw = path.read_text(encoding="utf-8-sig")
     except OSError as exc:
         raise InventoryFileError(
